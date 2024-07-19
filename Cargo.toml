@@ -1,0 +1,19 @@
+# 子工程
+[workspace]
+members = [ "cat", "grep","poem-store"]
+resolver = "1"
+
+# 工作空间配置
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Zero9501 <zero9501@outlook.com>"]
+description = "使用 Rust 实现一些终端命令工具."
+license = "MIT"
+
+# release 生产环境打包
+[profile.release]
+opt-level = 3
+debug = false
+debug-assertions = false
+overflow-checks = false

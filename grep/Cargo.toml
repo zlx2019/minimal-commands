@@ -1,0 +1,12 @@
+[package]
+name = "grep"
+description = "grep command"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+# ====================== Desc ======================
+# 使用 Rust 实现 grep 命令
+# ==================================================
+[dependencies]

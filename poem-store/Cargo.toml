@@ -1,0 +1,15 @@
+[package]
+name = "poem-store"
+version = "0.1.0"
+edition = "2021"
+authors.workspace = true
+description = "Poetry books manage"
+
+# ====================== Desc ======================
+# 通过 Rust 操作 Sqlite 数据库，实现诗词的基本管理.
+# ==================================================
+
+# 依赖库
+[dependencies]
+# 命令行参数解析
+clap = { version = "4.5.9", features = ["derive"] }
