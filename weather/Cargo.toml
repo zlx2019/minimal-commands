@@ -1,0 +1,18 @@
+[package]
+name = "weather"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description.workspace = true
+license.workspace = true
+
+
+[dependencies]
+# 基础工具库
+toys = {git = "https://github.com/zlx2019/rust-toys"}
+# 异步运行时
+tokio = {version = "1", features = ["full"]}
+# Http工具库
+reqwest = {version = "0.11.16", features = ["json","blocking"]}
+# 日期时间库
+chrono = {version = "0.4",features = ["serde"]}

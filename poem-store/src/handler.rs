@@ -1,10 +1,10 @@
+use sqlx::SqlitePool;
 use crate::commands::{CommandLine, DelTerm, Poem, SubCommands};
 
-
 /**
- * 主逻辑处理
+ * 程序的业务处理
  */
-pub fn handle(command_line: CommandLine) {
+pub fn handle(command_line: CommandLine, _pool: &SqlitePool) {
     if let Some(title) = command_line.title {
         println!("{title}")
     }
@@ -18,6 +18,8 @@ pub fn handle(command_line: CommandLine) {
         }
     }
 }
+
+
 
 
 /**

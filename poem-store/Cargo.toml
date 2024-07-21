@@ -9,7 +9,16 @@ description = "Poetry books manage"
 # 通过 Rust 操作 Sqlite 数据库，实现诗词的基本管理.
 # ==================================================
 
-# 依赖库
 [dependencies]
 # 命令行参数解析
-clap = { version = "4.5.9", features = ["derive"] }
+clap = { version = "4.5.9", features = ["derive"]}
+# 异步运行时
+tokio = { version = "1", features = ["full"] }
+# 异步数据访问层工具包
+sqlx = { version = "0.7", features = [
+    "sqlite",
+    "runtime-tokio", 
+    "tls-native-tls", 
+    "macros"]}
+# 环境变量工具库
+dotenvy = "0.15.7"

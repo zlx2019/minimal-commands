@@ -1,6 +1,6 @@
 # 子工程
 [workspace]
-members = [ "cat", "grep","poem-store"]
+members = [ "cat", "grep","poem-store", "weather"]
 resolver = "1"
 
 # 工作空间配置
