@@ -20,6 +20,6 @@ async fn main() -> DefaultResult{
     // 连接数据库
     let pool =  connect_database().await?;
     // 程序处理
-    handle(command_line, &pool);
+    handle(command_line, pool).await;
     Ok(())
 }

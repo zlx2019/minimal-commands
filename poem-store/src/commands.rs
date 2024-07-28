@@ -54,13 +54,10 @@ pub struct DelTerm{
 #[derive(Debug, Args)]
 pub struct Poem{
     /// 诗词标题
-    #[arg(long)]
     pub title: String,
     /// 作者
-    #[arg(long)]
     pub author: String,
     /// 正文
-    #[arg(long)]
     pub content: String
 }
 

@@ -1,5 +1,5 @@
 [package]
-name = "poem-store"
+name = "poem"
 version = "0.1.0"
 edition = "2021"
 authors.workspace = true
@@ -7,6 +7,7 @@ description = "Poetry books manage"
 
 # ====================== Desc ======================
 # 通过 Rust 操作 Sqlite 数据库，实现诗词的基本管理.
+# 参考: https://colobu.com/2024/05/12/sqlx-an-async-pure-Rust-SQL-crate
 # ==================================================
 
 [dependencies]
@@ -20,5 +21,9 @@ sqlx = { version = "0.7", features = [
     "runtime-tokio", 
     "tls-native-tls", 
     "macros"]}
+
 # 环境变量工具库
 dotenvy = "0.15.7"
+# 时间类型依赖库
+chrono = {version = "0.4.38", features = ["serde"]}
+
